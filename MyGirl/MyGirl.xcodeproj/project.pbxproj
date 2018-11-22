@@ -1,0 +1,940 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C00886F21A545E300F6166B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C00886E21A545E300F6166B /* AppDelegate.m */; };
+		2C00887221A545E300F6166B /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2C00887121A545E300F6166B /* ViewController.mm */; };
+		2C00887521A545E300F6166B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C00887321A545E300F6166B /* Main.storyboard */; };
+		2C00887721A545E600F6166B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C00887621A545E600F6166B /* Assets.xcassets */; };
+		2C00887A21A545E600F6166B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C00887821A545E600F6166B /* LaunchScreen.storyboard */; };
+		2C00887D21A545E600F6166B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C00887C21A545E600F6166B /* main.m */; };
+		2C008A4421A5476300F6166B /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C008A4321A5476300F6166B /* GLKit.framework */; };
+		2C008A4621A5476B00F6166B /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C008A4521A5476B00F6166B /* OpenGLES.framework */; };
+		2C008B5121A54F6D00F6166B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C008B5021A54F6D00F6166B /* AVFoundation.framework */; };
+		2C008B5321A54F7800F6166B /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C008B5221A54F7800F6166B /* CoreMotion.framework */; };
+		2C008CBD21A5547400F6166B /* Live2DResource in Resources */ = {isa = PBXBuildFile; fileRef = 2C008CBC21A5547400F6166B /* Live2DResource */; };
+		2C008D6121A69F4900F6166B /* L2DEyeBlink.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2C008CC121A69F4900F6166B /* L2DEyeBlink.cpp */; };
+		2C008D6221A69F4900F6166B /* L2DViewMatrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2C008CC521A69F4900F6166B /* L2DViewMatrix.cpp */; };
+		2C008D6321A69F4900F6166B /* L2DModelMatrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2C008CC621A69F4900F6166B /* L2DModelMatrix.cpp */; };
+		2C008D6421A69F4900F6166B /* L2DTargetPoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2C008CCA21A69F4900F6166B /* L2DTargetPoint.cpp */; };
+		2C008D6521A69F4900F6166B /* Live2DFramework.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2C008CCC21A69F4900F6166B /* Live2DFramework.cpp */; };
+		2C008D6621A69F4900F6166B /* L2DExpressionMotion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2C008CCD21A69F4900F6166B /* L2DExpressionMotion.cpp */; };
+		2C008D6721A69F4900F6166B /* L2DPose.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2C008CD421A69F4900F6166B /* L2DPose.cpp */; };
+		2C008D6821A69F4900F6166B /* L2DBaseModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2C008CD621A69F4900F6166B /* L2DBaseModel.cpp */; };
+		2C008D6921A69F4900F6166B /* L2DMotionManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2C008CD721A69F4900F6166B /* L2DMotionManager.cpp */; };
+		2C008D6A21A69F4900F6166B /* L2DPhysics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2C008CD821A69F4900F6166B /* L2DPhysics.cpp */; };
+		2C008D6B21A69F4900F6166B /* L2DMatrix44.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2C008CD921A69F4900F6166B /* L2DMatrix44.cpp */; };
+		2C008D6C21A69F4900F6166B /* L2DTextureDesc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2C008CDA21A69F4900F6166B /* L2DTextureDesc.cpp */; };
+		2C008D7121A69F4900F6166B /* ModelSetting.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2C008D4E21A69F4900F6166B /* ModelSetting.mm */; };
+		2C008D7221A69F4900F6166B /* LAppView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2C008D5121A69F4900F6166B /* LAppView.mm */; };
+		2C008D7321A69F4900F6166B /* LAppTextureDesc.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2C008D5221A69F4900F6166B /* LAppTextureDesc.mm */; };
+		2C008D7421A69F4900F6166B /* FileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C008D5421A69F4900F6166B /* FileManager.m */; };
+		2C008D7521A69F4900F6166B /* LAppLive2DManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2C008D5521A69F4900F6166B /* LAppLive2DManager.mm */; };
+		2C008D7621A69F4900F6166B /* LAppRenderer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2C008D5621A69F4900F6166B /* LAppRenderer.mm */; };
+		2C008D7721A69F4900F6166B /* SimpleImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C008D5721A69F4900F6166B /* SimpleImage.m */; };
+		2C008D7821A69F4900F6166B /* OffScreenImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C008D5821A69F4900F6166B /* OffScreenImage.m */; };
+		2C008D7921A69F4900F6166B /* TouchManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C008D5921A69F4900F6166B /* TouchManager.m */; };
+		2C008D7A21A69F4900F6166B /* PlatformManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2C008D5C21A69F4900F6166B /* PlatformManager.mm */; };
+		2C008D7B21A69F4900F6166B /* LAppModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2C008D5F21A69F4900F6166B /* LAppModel.mm */; };
+		2C008D7C21A69F4900F6166B /* AccelHelper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2C008D6021A69F4900F6166B /* AccelHelper.mm */; };
+		2C008E5C21A6A1D300F6166B /* libLive2D.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C008D4021A69F4900F6166B /* libLive2D.a */; };
+		2C008E5D21A6A1D300F6166B /* libLive2D.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C008D4221A69F4900F6166B /* libLive2D.a */; };
+		2C008E5E21A6A1D300F6166B /* libLive2D.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C008D4421A69F4900F6166B /* libLive2D.a */; };
+		2C008E5F21A6A1D300F6166B /* libLive2D.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C008D4621A69F4900F6166B /* libLive2D.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2C00886A21A545E300F6166B /* MyGirl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyGirl.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C00886D21A545E300F6166B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2C00886E21A545E300F6166B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2C00887021A545E300F6166B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2C00887121A545E300F6166B /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
+		2C00887421A545E300F6166B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2C00887621A545E600F6166B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2C00887921A545E600F6166B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2C00887B21A545E600F6166B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C00887C21A545E600F6166B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2C008A4321A5476300F6166B /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		2C008A4521A5476B00F6166B /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		2C008B5021A54F6D00F6166B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		2C008B5221A54F7800F6166B /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		2C008CBC21A5547400F6166B /* Live2DResource */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Live2DResource; sourceTree = "<group>"; };
+		2C008CC121A69F4900F6166B /* L2DEyeBlink.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = L2DEyeBlink.cpp; sourceTree = "<group>"; };
+		2C008CC221A69F4900F6166B /* L2DStandardID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = L2DStandardID.h; sourceTree = "<group>"; };
+		2C008CC321A69F4900F6166B /* L2DModelMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = L2DModelMatrix.h; sourceTree = "<group>"; };
+		2C008CC421A69F4900F6166B /* Live2DFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Live2DFramework.h; sourceTree = "<group>"; };
+		2C008CC521A69F4900F6166B /* L2DViewMatrix.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = L2DViewMatrix.cpp; sourceTree = "<group>"; };
+		2C008CC621A69F4900F6166B /* L2DModelMatrix.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = L2DModelMatrix.cpp; sourceTree = "<group>"; };
+		2C008CC721A69F4900F6166B /* IPlatformManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPlatformManager.h; sourceTree = "<group>"; };
+		2C008CC821A69F4900F6166B /* L2DEyeBlink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = L2DEyeBlink.h; sourceTree = "<group>"; };
+		2C008CC921A69F4900F6166B /* L2DExpressionMotion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = L2DExpressionMotion.h; sourceTree = "<group>"; };
+		2C008CCA21A69F4900F6166B /* L2DTargetPoint.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = L2DTargetPoint.cpp; sourceTree = "<group>"; };
+		2C008CCB21A69F4900F6166B /* L2DTextureDesc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = L2DTextureDesc.h; sourceTree = "<group>"; };
+		2C008CCC21A69F4900F6166B /* Live2DFramework.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Live2DFramework.cpp; sourceTree = "<group>"; };
+		2C008CCD21A69F4900F6166B /* L2DExpressionMotion.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = L2DExpressionMotion.cpp; sourceTree = "<group>"; };
+		2C008CCE21A69F4900F6166B /* L2DViewMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = L2DViewMatrix.h; sourceTree = "<group>"; };
+		2C008CCF21A69F4900F6166B /* L2DMatrix44.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = L2DMatrix44.h; sourceTree = "<group>"; };
+		2C008CD021A69F4900F6166B /* L2DBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = L2DBaseModel.h; sourceTree = "<group>"; };
+		2C008CD121A69F4900F6166B /* L2DPhysics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = L2DPhysics.h; sourceTree = "<group>"; };
+		2C008CD221A69F4900F6166B /* L2DMotionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = L2DMotionManager.h; sourceTree = "<group>"; };
+		2C008CD321A69F4900F6166B /* L2DTargetPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = L2DTargetPoint.h; sourceTree = "<group>"; };
+		2C008CD421A69F4900F6166B /* L2DPose.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = L2DPose.cpp; sourceTree = "<group>"; };
+		2C008CD521A69F4900F6166B /* L2DPose.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = L2DPose.h; sourceTree = "<group>"; };
+		2C008CD621A69F4900F6166B /* L2DBaseModel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = L2DBaseModel.cpp; sourceTree = "<group>"; };
+		2C008CD721A69F4900F6166B /* L2DMotionManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = L2DMotionManager.cpp; sourceTree = "<group>"; };
+		2C008CD821A69F4900F6166B /* L2DPhysics.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = L2DPhysics.cpp; sourceTree = "<group>"; };
+		2C008CD921A69F4900F6166B /* L2DMatrix44.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = L2DMatrix44.cpp; sourceTree = "<group>"; };
+		2C008CDA21A69F4900F6166B /* L2DTextureDesc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = L2DTextureDesc.cpp; sourceTree = "<group>"; };
+		2C008CDE21A69F4900F6166B /* LDAllocator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDAllocator.h; sourceTree = "<group>"; };
+		2C008CDF21A69F4900F6166B /* LDObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDObject.h; sourceTree = "<group>"; };
+		2C008CE021A69F4900F6166B /* MemoryParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoryParam.h; sourceTree = "<group>"; };
+		2C008CE121A69F4900F6166B /* APageHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APageHeader.h; sourceTree = "<group>"; };
+		2C008CE221A69F4900F6166B /* LDUnmanagedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDUnmanagedObject.h; sourceTree = "<group>"; };
+		2C008CE421A69F4900F6166B /* MemoryHolderFixed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoryHolderFixed.h; sourceTree = "<group>"; };
+		2C008CE521A69F4900F6166B /* MHPageHeaderFixed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHPageHeaderFixed.h; sourceTree = "<group>"; };
+		2C008CE621A69F4900F6166B /* AMemoryHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMemoryHolder.h; sourceTree = "<group>"; };
+		2C008CE821A69F4900F6166B /* MHPageHeaderTmp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHPageHeaderTmp.h; sourceTree = "<group>"; };
+		2C008CE921A69F4900F6166B /* MemoryHolderTmp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoryHolderTmp.h; sourceTree = "<group>"; };
+		2C008CEA21A69F4900F6166B /* MHBin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHBin.h; sourceTree = "<group>"; };
+		2C008CEC21A69F4900F6166B /* MemoryInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoryInfo.h; sourceTree = "<group>"; };
+		2C008CED21A69F4900F6166B /* MemoryInfoSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoryInfoSet.h; sourceTree = "<group>"; };
+		2C008CEE21A69F4900F6166B /* UtMemory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtMemory.h; sourceTree = "<group>"; };
+		2C008CF021A69F4900F6166B /* UtOS_iPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtOS_iPhone.h; sourceTree = "<group>"; };
+		2C008CF121A69F4900F6166B /* UtArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtArray.h; sourceTree = "<group>"; };
+		2C008CF221A69F4900F6166B /* UtMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtMath.h; sourceTree = "<group>"; };
+		2C008CF321A69F4900F6166B /* UtInterpolate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtInterpolate.h; sourceTree = "<group>"; };
+		2C008CF421A69F4900F6166B /* UtSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtSystem.h; sourceTree = "<group>"; };
+		2C008CF521A69F4900F6166B /* UtDebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtDebug.h; sourceTree = "<group>"; };
+		2C008CF621A69F4900F6166B /* Json.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Json.h; sourceTree = "<group>"; };
+		2C008CF721A69F4900F6166B /* UtString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtString.h; sourceTree = "<group>"; };
+		2C008CF821A69F4900F6166B /* UtMotion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtMotion.h; sourceTree = "<group>"; };
+		2C008CF921A69F4900F6166B /* UtFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtFile.h; sourceTree = "<group>"; };
+		2C008CFA21A69F4900F6166B /* Live2D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Live2D.h; sourceTree = "<group>"; };
+		2C008CFC21A69F4900F6166B /* RefString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RefString.h; sourceTree = "<group>"; };
+		2C008CFD21A69F4900F6166B /* ISerializableV2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISerializableV2.h; sourceTree = "<group>"; };
+		2C008CFE21A69F4900F6166B /* FileFormat2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileFormat2.h; sourceTree = "<group>"; };
+		2C008CFF21A69F4900F6166B /* ByteBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ByteBuffer.h; sourceTree = "<group>"; };
+		2C008D0021A69F4900F6166B /* BReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BReader.h; sourceTree = "<group>"; };
+		2C008D0221A69F4900F6166B /* Arrays2D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Arrays2D.h; sourceTree = "<group>"; };
+		2C008D0421A69F4900F6166B /* MotionQueueManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MotionQueueManager.h; sourceTree = "<group>"; };
+		2C008D0521A69F4900F6166B /* EyeBlinkMotion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EyeBlinkMotion.h; sourceTree = "<group>"; };
+		2C008D0621A69F4900F6166B /* MotionQueueEnt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MotionQueueEnt.h; sourceTree = "<group>"; };
+		2C008D0721A69F4900F6166B /* AMotion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMotion.h; sourceTree = "<group>"; };
+		2C008D0821A69F4900F6166B /* Live2DMotion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Live2DMotion.h; sourceTree = "<group>"; };
+		2C008D0921A69F4900F6166B /* Live2DMotionBin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Live2DMotionBin.h; sourceTree = "<group>"; };
+		2C008D0A21A69F4900F6166B /* Live2DModelIPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Live2DModelIPhone.h; sourceTree = "<group>"; };
+		2C008D0C21A69F4900F6166B /* ParamPivots.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParamPivots.h; sourceTree = "<group>"; };
+		2C008D0D21A69F4900F6166B /* ParamDefSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParamDefSet.h; sourceTree = "<group>"; };
+		2C008D0E21A69F4900F6166B /* ParamDefFloat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParamDefFloat.h; sourceTree = "<group>"; };
+		2C008D0F21A69F4900F6166B /* PivotManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PivotManager.h; sourceTree = "<group>"; };
+		2C008D1021A69F4900F6166B /* ALive2DModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALive2DModel.h; sourceTree = "<group>"; };
+		2C008D1221A69F4900F6166B /* LDRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDRect.h; sourceTree = "<group>"; };
+		2C008D1321A69F4900F6166B /* LDString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDString.h; sourceTree = "<group>"; };
+		2C008D1421A69F4900F6166B /* LDPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDPoint.h; sourceTree = "<group>"; };
+		2C008D1521A69F4900F6166B /* LDVector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDVector.h; sourceTree = "<group>"; };
+		2C008D1621A69F4900F6166B /* LDRectF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDRectF.h; sourceTree = "<group>"; };
+		2C008D1721A69F4900F6166B /* LDPointF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDPointF.h; sourceTree = "<group>"; };
+		2C008D1821A69F4900F6166B /* LDColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDColor.h; sourceTree = "<group>"; };
+		2C008D1921A69F4900F6166B /* LDMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDMap.h; sourceTree = "<group>"; };
+		2C008D1A21A69F4900F6166B /* LDAffineTransform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDAffineTransform.h; sourceTree = "<group>"; };
+		2C008D1B21A69F4900F6166B /* ModelContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelContext.h; sourceTree = "<group>"; };
+		2C008D1D21A69F4900F6166B /* UtModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtModel.h; sourceTree = "<group>"; };
+		2C008D1E21A69F4900F6166B /* ModelImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelImpl.h; sourceTree = "<group>"; };
+		2C008D1F21A69F4900F6166B /* PartsData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PartsData.h; sourceTree = "<group>"; };
+		2C008D2121A69F4900F6166B /* AvatarPartsItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvatarPartsItem.h; sourceTree = "<group>"; };
+		2C008D2321A69F4900F6166B /* BaseDataID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseDataID.h; sourceTree = "<group>"; };
+		2C008D2421A69F4900F6166B /* DrawDataID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawDataID.h; sourceTree = "<group>"; };
+		2C008D2521A69F4900F6166B /* PartsDataID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PartsDataID.h; sourceTree = "<group>"; };
+		2C008D2621A69F4900F6166B /* ID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ID.h; sourceTree = "<group>"; };
+		2C008D2721A69F4900F6166B /* ParamID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParamID.h; sourceTree = "<group>"; };
+		2C008D2921A69F4900F6166B /* PhysicsParams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhysicsParams.h; sourceTree = "<group>"; };
+		2C008D2A21A69F4900F6166B /* PhysicsHair.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhysicsHair.h; sourceTree = "<group>"; };
+		2C008D2B21A69F4900F6166B /* DEF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEF.h; sourceTree = "<group>"; };
+		2C008D2D21A69F4900F6166B /* DrawParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawParam.h; sourceTree = "<group>"; };
+		2C008D2E21A69F4900F6166B /* DrawParam_OpenGLES1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawParam_OpenGLES1.h; sourceTree = "<group>"; };
+		2C008D2F21A69F4900F6166B /* UtOpenGLDebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtOpenGLDebug.h; sourceTree = "<group>"; };
+		2C008D3021A69F4900F6166B /* UtOpenGLES2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtOpenGLES2.h; sourceTree = "<group>"; };
+		2C008D3121A69F4900F6166B /* DrawProfileUnity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawProfileUnity.h; sourceTree = "<group>"; };
+		2C008D3221A69F4900F6166B /* DrawProfileCocos2D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawProfileCocos2D.h; sourceTree = "<group>"; };
+		2C008D3421A69F4900F6166B /* IDrawData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDrawData.h; sourceTree = "<group>"; };
+		2C008D3521A69F4900F6166B /* DDTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDTexture.h; sourceTree = "<group>"; };
+		2C008D3621A69F4900F6166B /* IDrawContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDrawContext.h; sourceTree = "<group>"; };
+		2C008D3821A69F4900F6166B /* IBaseData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBaseData.h; sourceTree = "<group>"; };
+		2C008D3A21A69F4900F6166B /* AffineEnt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AffineEnt.h; sourceTree = "<group>"; };
+		2C008D3B21A69F4900F6166B /* BDAffine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDAffine.h; sourceTree = "<group>"; };
+		2C008D3C21A69F4900F6166B /* IBaseContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBaseContext.h; sourceTree = "<group>"; };
+		2C008D3D21A69F4900F6166B /* BDBoxGrid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDBoxGrid.h; sourceTree = "<group>"; };
+		2C008D4021A69F4900F6166B /* libLive2D.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libLive2D.a; sourceTree = "<group>"; };
+		2C008D4221A69F4900F6166B /* libLive2D.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libLive2D.a; sourceTree = "<group>"; };
+		2C008D4421A69F4900F6166B /* libLive2D.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libLive2D.a; sourceTree = "<group>"; };
+		2C008D4621A69F4900F6166B /* libLive2D.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libLive2D.a; sourceTree = "<group>"; };
+		2C008D4821A69F4900F6166B /* FileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileManager.h; sourceTree = "<group>"; };
+		2C008D4921A69F4900F6166B /* LAppTextureDesc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAppTextureDesc.h; sourceTree = "<group>"; };
+		2C008D4A21A69F4900F6166B /* ModelSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelSetting.h; sourceTree = "<group>"; };
+		2C008D4B21A69F4900F6166B /* PlatformManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlatformManager.h; sourceTree = "<group>"; };
+		2C008D4C21A69F4900F6166B /* TouchManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchManager.h; sourceTree = "<group>"; };
+		2C008D4D21A69F4900F6166B /* OffScreenImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OffScreenImage.h; sourceTree = "<group>"; };
+		2C008D4E21A69F4900F6166B /* ModelSetting.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ModelSetting.mm; sourceTree = "<group>"; };
+		2C008D4F21A69F4900F6166B /* SimpleImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleImage.h; sourceTree = "<group>"; };
+		2C008D5021A69F4900F6166B /* LAppView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAppView.h; sourceTree = "<group>"; };
+		2C008D5121A69F4900F6166B /* LAppView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LAppView.mm; sourceTree = "<group>"; };
+		2C008D5221A69F4900F6166B /* LAppTextureDesc.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LAppTextureDesc.mm; sourceTree = "<group>"; };
+		2C008D5321A69F4900F6166B /* AccelHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccelHelper.h; sourceTree = "<group>"; };
+		2C008D5421A69F4900F6166B /* FileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileManager.m; sourceTree = "<group>"; };
+		2C008D5521A69F4900F6166B /* LAppLive2DManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LAppLive2DManager.mm; sourceTree = "<group>"; };
+		2C008D5621A69F4900F6166B /* LAppRenderer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LAppRenderer.mm; sourceTree = "<group>"; };
+		2C008D5721A69F4900F6166B /* SimpleImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleImage.m; sourceTree = "<group>"; };
+		2C008D5821A69F4900F6166B /* OffScreenImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OffScreenImage.m; sourceTree = "<group>"; };
+		2C008D5921A69F4900F6166B /* TouchManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchManager.m; sourceTree = "<group>"; };
+		2C008D5A21A69F4900F6166B /* LAppLive2DManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAppLive2DManager.h; sourceTree = "<group>"; };
+		2C008D5B21A69F4900F6166B /* LAppModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAppModel.h; sourceTree = "<group>"; };
+		2C008D5C21A69F4900F6166B /* PlatformManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PlatformManager.mm; sourceTree = "<group>"; };
+		2C008D5D21A69F4900F6166B /* LAppDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAppDefine.h; sourceTree = "<group>"; };
+		2C008D5E21A69F4900F6166B /* LAppRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAppRenderer.h; sourceTree = "<group>"; };
+		2C008D5F21A69F4900F6166B /* LAppModel.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LAppModel.mm; sourceTree = "<group>"; };
+		2C008D6021A69F4900F6166B /* AccelHelper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AccelHelper.mm; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2C00886721A545E300F6166B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C008B5321A54F7800F6166B /* CoreMotion.framework in Frameworks */,
+				2C008B5121A54F6D00F6166B /* AVFoundation.framework in Frameworks */,
+				2C008A4621A5476B00F6166B /* OpenGLES.framework in Frameworks */,
+				2C008A4421A5476300F6166B /* GLKit.framework in Frameworks */,
+				2C008E5C21A6A1D300F6166B /* libLive2D.a in Frameworks */,
+				2C008E5D21A6A1D300F6166B /* libLive2D.a in Frameworks */,
+				2C008E5E21A6A1D300F6166B /* libLive2D.a in Frameworks */,
+				2C008E5F21A6A1D300F6166B /* libLive2D.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2C00886121A545E300F6166B = {
+			isa = PBXGroup;
+			children = (
+				2C00886C21A545E300F6166B /* MyGirl */,
+				2C00886B21A545E300F6166B /* Products */,
+				2C008A4221A5476300F6166B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2C00886B21A545E300F6166B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2C00886A21A545E300F6166B /* MyGirl.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2C00886C21A545E300F6166B /* MyGirl */ = {
+			isa = PBXGroup;
+			children = (
+				2C008CC021A69F4900F6166B /* Live2DFramework */,
+				2C008CDB21A69F4900F6166B /* Live2DSDK */,
+				2C008D4721A69F4900F6166B /* OfficalLive2DTools */,
+				2C008CBC21A5547400F6166B /* Live2DResource */,
+				2C00886D21A545E300F6166B /* AppDelegate.h */,
+				2C00886E21A545E300F6166B /* AppDelegate.m */,
+				2C00887021A545E300F6166B /* ViewController.h */,
+				2C00887121A545E300F6166B /* ViewController.mm */,
+				2C00887321A545E300F6166B /* Main.storyboard */,
+				2C00887621A545E600F6166B /* Assets.xcassets */,
+				2C00887821A545E600F6166B /* LaunchScreen.storyboard */,
+				2C00887B21A545E600F6166B /* Info.plist */,
+				2C00887C21A545E600F6166B /* main.m */,
+			);
+			path = MyGirl;
+			sourceTree = "<group>";
+		};
+		2C008A4221A5476300F6166B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2C008B5221A54F7800F6166B /* CoreMotion.framework */,
+				2C008B5021A54F6D00F6166B /* AVFoundation.framework */,
+				2C008A4521A5476B00F6166B /* OpenGLES.framework */,
+				2C008A4321A5476300F6166B /* GLKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2C008CC021A69F4900F6166B /* Live2DFramework */ = {
+			isa = PBXGroup;
+			children = (
+				2C008CC121A69F4900F6166B /* L2DEyeBlink.cpp */,
+				2C008CC221A69F4900F6166B /* L2DStandardID.h */,
+				2C008CC321A69F4900F6166B /* L2DModelMatrix.h */,
+				2C008CC421A69F4900F6166B /* Live2DFramework.h */,
+				2C008CC521A69F4900F6166B /* L2DViewMatrix.cpp */,
+				2C008CC621A69F4900F6166B /* L2DModelMatrix.cpp */,
+				2C008CC721A69F4900F6166B /* IPlatformManager.h */,
+				2C008CC821A69F4900F6166B /* L2DEyeBlink.h */,
+				2C008CC921A69F4900F6166B /* L2DExpressionMotion.h */,
+				2C008CCA21A69F4900F6166B /* L2DTargetPoint.cpp */,
+				2C008CCB21A69F4900F6166B /* L2DTextureDesc.h */,
+				2C008CCC21A69F4900F6166B /* Live2DFramework.cpp */,
+				2C008CCD21A69F4900F6166B /* L2DExpressionMotion.cpp */,
+				2C008CCE21A69F4900F6166B /* L2DViewMatrix.h */,
+				2C008CCF21A69F4900F6166B /* L2DMatrix44.h */,
+				2C008CD021A69F4900F6166B /* L2DBaseModel.h */,
+				2C008CD121A69F4900F6166B /* L2DPhysics.h */,
+				2C008CD221A69F4900F6166B /* L2DMotionManager.h */,
+				2C008CD321A69F4900F6166B /* L2DTargetPoint.h */,
+				2C008CD421A69F4900F6166B /* L2DPose.cpp */,
+				2C008CD521A69F4900F6166B /* L2DPose.h */,
+				2C008CD621A69F4900F6166B /* L2DBaseModel.cpp */,
+				2C008CD721A69F4900F6166B /* L2DMotionManager.cpp */,
+				2C008CD821A69F4900F6166B /* L2DPhysics.cpp */,
+				2C008CD921A69F4900F6166B /* L2DMatrix44.cpp */,
+				2C008CDA21A69F4900F6166B /* L2DTextureDesc.cpp */,
+			);
+			path = Live2DFramework;
+			sourceTree = "<group>";
+		};
+		2C008CDB21A69F4900F6166B /* Live2DSDK */ = {
+			isa = PBXGroup;
+			children = (
+				2C008CDC21A69F4900F6166B /* include */,
+				2C008D3E21A69F4900F6166B /* lib */,
+			);
+			path = Live2DSDK;
+			sourceTree = "<group>";
+		};
+		2C008CDC21A69F4900F6166B /* include */ = {
+			isa = PBXGroup;
+			children = (
+				2C008CDD21A69F4900F6166B /* memory */,
+				2C008CEF21A69F4900F6166B /* util */,
+				2C008CFA21A69F4900F6166B /* Live2D.h */,
+				2C008CFB21A69F4900F6166B /* io */,
+				2C008D0321A69F4900F6166B /* motion */,
+				2C008D0A21A69F4900F6166B /* Live2DModelIPhone.h */,
+				2C008D0B21A69F4900F6166B /* param */,
+				2C008D1021A69F4900F6166B /* ALive2DModel.h */,
+				2C008D1121A69F4900F6166B /* type */,
+				2C008D1B21A69F4900F6166B /* ModelContext.h */,
+				2C008D1C21A69F4900F6166B /* model */,
+				2C008D2021A69F4900F6166B /* avatar */,
+				2C008D2221A69F4900F6166B /* id */,
+				2C008D2821A69F4900F6166B /* physics */,
+				2C008D2B21A69F4900F6166B /* DEF.h */,
+				2C008D2C21A69F4900F6166B /* graphics */,
+				2C008D3321A69F4900F6166B /* draw */,
+				2C008D3721A69F4900F6166B /* base */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		2C008CDD21A69F4900F6166B /* memory */ = {
+			isa = PBXGroup;
+			children = (
+				2C008CDE21A69F4900F6166B /* LDAllocator.h */,
+				2C008CDF21A69F4900F6166B /* LDObject.h */,
+				2C008CE021A69F4900F6166B /* MemoryParam.h */,
+				2C008CE121A69F4900F6166B /* APageHeader.h */,
+				2C008CE221A69F4900F6166B /* LDUnmanagedObject.h */,
+				2C008CE321A69F4900F6166B /* fixed */,
+				2C008CE621A69F4900F6166B /* AMemoryHolder.h */,
+				2C008CE721A69F4900F6166B /* tmp */,
+				2C008CEB21A69F4900F6166B /* debug */,
+				2C008CEE21A69F4900F6166B /* UtMemory.h */,
+			);
+			path = memory;
+			sourceTree = "<group>";
+		};
+		2C008CE321A69F4900F6166B /* fixed */ = {
+			isa = PBXGroup;
+			children = (
+				2C008CE421A69F4900F6166B /* MemoryHolderFixed.h */,
+				2C008CE521A69F4900F6166B /* MHPageHeaderFixed.h */,
+			);
+			path = fixed;
+			sourceTree = "<group>";
+		};
+		2C008CE721A69F4900F6166B /* tmp */ = {
+			isa = PBXGroup;
+			children = (
+				2C008CE821A69F4900F6166B /* MHPageHeaderTmp.h */,
+				2C008CE921A69F4900F6166B /* MemoryHolderTmp.h */,
+				2C008CEA21A69F4900F6166B /* MHBin.h */,
+			);
+			path = tmp;
+			sourceTree = "<group>";
+		};
+		2C008CEB21A69F4900F6166B /* debug */ = {
+			isa = PBXGroup;
+			children = (
+				2C008CEC21A69F4900F6166B /* MemoryInfo.h */,
+				2C008CED21A69F4900F6166B /* MemoryInfoSet.h */,
+			);
+			path = debug;
+			sourceTree = "<group>";
+		};
+		2C008CEF21A69F4900F6166B /* util */ = {
+			isa = PBXGroup;
+			children = (
+				2C008CF021A69F4900F6166B /* UtOS_iPhone.h */,
+				2C008CF121A69F4900F6166B /* UtArray.h */,
+				2C008CF221A69F4900F6166B /* UtMath.h */,
+				2C008CF321A69F4900F6166B /* UtInterpolate.h */,
+				2C008CF421A69F4900F6166B /* UtSystem.h */,
+				2C008CF521A69F4900F6166B /* UtDebug.h */,
+				2C008CF621A69F4900F6166B /* Json.h */,
+				2C008CF721A69F4900F6166B /* UtString.h */,
+				2C008CF821A69F4900F6166B /* UtMotion.h */,
+				2C008CF921A69F4900F6166B /* UtFile.h */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+		2C008CFB21A69F4900F6166B /* io */ = {
+			isa = PBXGroup;
+			children = (
+				2C008CFC21A69F4900F6166B /* RefString.h */,
+				2C008CFD21A69F4900F6166B /* ISerializableV2.h */,
+				2C008CFE21A69F4900F6166B /* FileFormat2.h */,
+				2C008CFF21A69F4900F6166B /* ByteBuffer.h */,
+				2C008D0021A69F4900F6166B /* BReader.h */,
+				2C008D0121A69F4900F6166B /* data */,
+			);
+			path = io;
+			sourceTree = "<group>";
+		};
+		2C008D0121A69F4900F6166B /* data */ = {
+			isa = PBXGroup;
+			children = (
+				2C008D0221A69F4900F6166B /* Arrays2D.h */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		2C008D0321A69F4900F6166B /* motion */ = {
+			isa = PBXGroup;
+			children = (
+				2C008D0421A69F4900F6166B /* MotionQueueManager.h */,
+				2C008D0521A69F4900F6166B /* EyeBlinkMotion.h */,
+				2C008D0621A69F4900F6166B /* MotionQueueEnt.h */,
+				2C008D0721A69F4900F6166B /* AMotion.h */,
+				2C008D0821A69F4900F6166B /* Live2DMotion.h */,
+				2C008D0921A69F4900F6166B /* Live2DMotionBin.h */,
+			);
+			path = motion;
+			sourceTree = "<group>";
+		};
+		2C008D0B21A69F4900F6166B /* param */ = {
+			isa = PBXGroup;
+			children = (
+				2C008D0C21A69F4900F6166B /* ParamPivots.h */,
+				2C008D0D21A69F4900F6166B /* ParamDefSet.h */,
+				2C008D0E21A69F4900F6166B /* ParamDefFloat.h */,
+				2C008D0F21A69F4900F6166B /* PivotManager.h */,
+			);
+			path = param;
+			sourceTree = "<group>";
+		};
+		2C008D1121A69F4900F6166B /* type */ = {
+			isa = PBXGroup;
+			children = (
+				2C008D1221A69F4900F6166B /* LDRect.h */,
+				2C008D1321A69F4900F6166B /* LDString.h */,
+				2C008D1421A69F4900F6166B /* LDPoint.h */,
+				2C008D1521A69F4900F6166B /* LDVector.h */,
+				2C008D1621A69F4900F6166B /* LDRectF.h */,
+				2C008D1721A69F4900F6166B /* LDPointF.h */,
+				2C008D1821A69F4900F6166B /* LDColor.h */,
+				2C008D1921A69F4900F6166B /* LDMap.h */,
+				2C008D1A21A69F4900F6166B /* LDAffineTransform.h */,
+			);
+			path = type;
+			sourceTree = "<group>";
+		};
+		2C008D1C21A69F4900F6166B /* model */ = {
+			isa = PBXGroup;
+			children = (
+				2C008D1D21A69F4900F6166B /* UtModel.h */,
+				2C008D1E21A69F4900F6166B /* ModelImpl.h */,
+				2C008D1F21A69F4900F6166B /* PartsData.h */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		2C008D2021A69F4900F6166B /* avatar */ = {
+			isa = PBXGroup;
+			children = (
+				2C008D2121A69F4900F6166B /* AvatarPartsItem.h */,
+			);
+			path = avatar;
+			sourceTree = "<group>";
+		};
+		2C008D2221A69F4900F6166B /* id */ = {
+			isa = PBXGroup;
+			children = (
+				2C008D2321A69F4900F6166B /* BaseDataID.h */,
+				2C008D2421A69F4900F6166B /* DrawDataID.h */,
+				2C008D2521A69F4900F6166B /* PartsDataID.h */,
+				2C008D2621A69F4900F6166B /* ID.h */,
+				2C008D2721A69F4900F6166B /* ParamID.h */,
+			);
+			path = id;
+			sourceTree = "<group>";
+		};
+		2C008D2821A69F4900F6166B /* physics */ = {
+			isa = PBXGroup;
+			children = (
+				2C008D2921A69F4900F6166B /* PhysicsParams.h */,
+				2C008D2A21A69F4900F6166B /* PhysicsHair.h */,
+			);
+			path = physics;
+			sourceTree = "<group>";
+		};
+		2C008D2C21A69F4900F6166B /* graphics */ = {
+			isa = PBXGroup;
+			children = (
+				2C008D2D21A69F4900F6166B /* DrawParam.h */,
+				2C008D2E21A69F4900F6166B /* DrawParam_OpenGLES1.h */,
+				2C008D2F21A69F4900F6166B /* UtOpenGLDebug.h */,
+				2C008D3021A69F4900F6166B /* UtOpenGLES2.h */,
+				2C008D3121A69F4900F6166B /* DrawProfileUnity.h */,
+				2C008D3221A69F4900F6166B /* DrawProfileCocos2D.h */,
+			);
+			path = graphics;
+			sourceTree = "<group>";
+		};
+		2C008D3321A69F4900F6166B /* draw */ = {
+			isa = PBXGroup;
+			children = (
+				2C008D3421A69F4900F6166B /* IDrawData.h */,
+				2C008D3521A69F4900F6166B /* DDTexture.h */,
+				2C008D3621A69F4900F6166B /* IDrawContext.h */,
+			);
+			path = draw;
+			sourceTree = "<group>";
+		};
+		2C008D3721A69F4900F6166B /* base */ = {
+			isa = PBXGroup;
+			children = (
+				2C008D3821A69F4900F6166B /* IBaseData.h */,
+				2C008D3921A69F4900F6166B /* private */,
+				2C008D3B21A69F4900F6166B /* BDAffine.h */,
+				2C008D3C21A69F4900F6166B /* IBaseContext.h */,
+				2C008D3D21A69F4900F6166B /* BDBoxGrid.h */,
+			);
+			path = base;
+			sourceTree = "<group>";
+		};
+		2C008D3921A69F4900F6166B /* private */ = {
+			isa = PBXGroup;
+			children = (
+				2C008D3A21A69F4900F6166B /* AffineEnt.h */,
+			);
+			path = private;
+			sourceTree = "<group>";
+		};
+		2C008D3E21A69F4900F6166B /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				2C008D3F21A69F4900F6166B /* Release-iphonesimulator */,
+				2C008D4121A69F4900F6166B /* Debug-iphonesimulator */,
+				2C008D4321A69F4900F6166B /* Release-iphoneos */,
+				2C008D4521A69F4900F6166B /* Debug-iphoneos */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		2C008D3F21A69F4900F6166B /* Release-iphonesimulator */ = {
+			isa = PBXGroup;
+			children = (
+				2C008D4021A69F4900F6166B /* libLive2D.a */,
+			);
+			path = "Release-iphonesimulator";
+			sourceTree = "<group>";
+		};
+		2C008D4121A69F4900F6166B /* Debug-iphonesimulator */ = {
+			isa = PBXGroup;
+			children = (
+				2C008D4221A69F4900F6166B /* libLive2D.a */,
+			);
+			path = "Debug-iphonesimulator";
+			sourceTree = "<group>";
+		};
+		2C008D4321A69F4900F6166B /* Release-iphoneos */ = {
+			isa = PBXGroup;
+			children = (
+				2C008D4421A69F4900F6166B /* libLive2D.a */,
+			);
+			path = "Release-iphoneos";
+			sourceTree = "<group>";
+		};
+		2C008D4521A69F4900F6166B /* Debug-iphoneos */ = {
+			isa = PBXGroup;
+			children = (
+				2C008D4621A69F4900F6166B /* libLive2D.a */,
+			);
+			path = "Debug-iphoneos";
+			sourceTree = "<group>";
+		};
+		2C008D4721A69F4900F6166B /* OfficalLive2DTools */ = {
+			isa = PBXGroup;
+			children = (
+				2C008D4821A69F4900F6166B /* FileManager.h */,
+				2C008D4921A69F4900F6166B /* LAppTextureDesc.h */,
+				2C008D4A21A69F4900F6166B /* ModelSetting.h */,
+				2C008D4B21A69F4900F6166B /* PlatformManager.h */,
+				2C008D4C21A69F4900F6166B /* TouchManager.h */,
+				2C008D4D21A69F4900F6166B /* OffScreenImage.h */,
+				2C008D4E21A69F4900F6166B /* ModelSetting.mm */,
+				2C008D4F21A69F4900F6166B /* SimpleImage.h */,
+				2C008D5021A69F4900F6166B /* LAppView.h */,
+				2C008D5121A69F4900F6166B /* LAppView.mm */,
+				2C008D5221A69F4900F6166B /* LAppTextureDesc.mm */,
+				2C008D5321A69F4900F6166B /* AccelHelper.h */,
+				2C008D5421A69F4900F6166B /* FileManager.m */,
+				2C008D5521A69F4900F6166B /* LAppLive2DManager.mm */,
+				2C008D5621A69F4900F6166B /* LAppRenderer.mm */,
+				2C008D5721A69F4900F6166B /* SimpleImage.m */,
+				2C008D5821A69F4900F6166B /* OffScreenImage.m */,
+				2C008D5921A69F4900F6166B /* TouchManager.m */,
+				2C008D5A21A69F4900F6166B /* LAppLive2DManager.h */,
+				2C008D5B21A69F4900F6166B /* LAppModel.h */,
+				2C008D5C21A69F4900F6166B /* PlatformManager.mm */,
+				2C008D5D21A69F4900F6166B /* LAppDefine.h */,
+				2C008D5E21A69F4900F6166B /* LAppRenderer.h */,
+				2C008D5F21A69F4900F6166B /* LAppModel.mm */,
+				2C008D6021A69F4900F6166B /* AccelHelper.mm */,
+			);
+			path = OfficalLive2DTools;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2C00886921A545E300F6166B /* MyGirl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C00888021A545E600F6166B /* Build configuration list for PBXNativeTarget "MyGirl" */;
+			buildPhases = (
+				2C00886621A545E300F6166B /* Sources */,
+				2C00886721A545E300F6166B /* Frameworks */,
+				2C00886821A545E300F6166B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyGirl;
+			productName = MyGirl;
+			productReference = 2C00886A21A545E300F6166B /* MyGirl.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2C00886221A545E300F6166B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = fancy;
+				TargetAttributes = {
+					2C00886921A545E300F6166B = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 2C00886521A545E300F6166B /* Build configuration list for PBXProject "MyGirl" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2C00886121A545E300F6166B;
+			productRefGroup = 2C00886B21A545E300F6166B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2C00886921A545E300F6166B /* MyGirl */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2C00886821A545E300F6166B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C008CBD21A5547400F6166B /* Live2DResource in Resources */,
+				2C00887A21A545E600F6166B /* LaunchScreen.storyboard in Resources */,
+				2C00887721A545E600F6166B /* Assets.xcassets in Resources */,
+				2C00887521A545E300F6166B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2C00886621A545E300F6166B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C008D6921A69F4900F6166B /* L2DMotionManager.cpp in Sources */,
+				2C008D6521A69F4900F6166B /* Live2DFramework.cpp in Sources */,
+				2C008D6621A69F4900F6166B /* L2DExpressionMotion.cpp in Sources */,
+				2C008D6421A69F4900F6166B /* L2DTargetPoint.cpp in Sources */,
+				2C008D6A21A69F4900F6166B /* L2DPhysics.cpp in Sources */,
+				2C008D7821A69F4900F6166B /* OffScreenImage.m in Sources */,
+				2C008D6B21A69F4900F6166B /* L2DMatrix44.cpp in Sources */,
+				2C008D7921A69F4900F6166B /* TouchManager.m in Sources */,
+				2C008D7A21A69F4900F6166B /* PlatformManager.mm in Sources */,
+				2C008D7121A69F4900F6166B /* ModelSetting.mm in Sources */,
+				2C00887221A545E300F6166B /* ViewController.mm in Sources */,
+				2C008D7421A69F4900F6166B /* FileManager.m in Sources */,
+				2C008D7B21A69F4900F6166B /* LAppModel.mm in Sources */,
+				2C008D6321A69F4900F6166B /* L2DModelMatrix.cpp in Sources */,
+				2C008D7521A69F4900F6166B /* LAppLive2DManager.mm in Sources */,
+				2C008D7321A69F4900F6166B /* LAppTextureDesc.mm in Sources */,
+				2C008D6C21A69F4900F6166B /* L2DTextureDesc.cpp in Sources */,
+				2C008D7C21A69F4900F6166B /* AccelHelper.mm in Sources */,
+				2C008D6721A69F4900F6166B /* L2DPose.cpp in Sources */,
+				2C008D6221A69F4900F6166B /* L2DViewMatrix.cpp in Sources */,
+				2C008D6821A69F4900F6166B /* L2DBaseModel.cpp in Sources */,
+				2C008D6121A69F4900F6166B /* L2DEyeBlink.cpp in Sources */,
+				2C00887D21A545E600F6166B /* main.m in Sources */,
+				2C008D7621A69F4900F6166B /* LAppRenderer.mm in Sources */,
+				2C008D7221A69F4900F6166B /* LAppView.mm in Sources */,
+				2C00886F21A545E300F6166B /* AppDelegate.m in Sources */,
+				2C008D7721A69F4900F6166B /* SimpleImage.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2C00887321A545E300F6166B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C00887421A545E300F6166B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2C00887821A545E600F6166B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C00887921A545E600F6166B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2C00887E21A545E600F6166B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2C00887F21A545E600F6166B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2C00888121A545E600F6166B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 64DK8BZY68;
+				ENABLE_BITCODE = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					L2D_TARGET_IPHONE,
+				);
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/MyGirl/Live2DSDK/include";
+				INFOPLIST_FILE = MyGirl/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/Live2DSDK/lib/$(CONFIGURATION)-$(PLATFORM_NAME)",
+					"$(PROJECT_DIR)/MyGirl/Live2DSDK/lib/Release-iphonesimulator",
+					"$(PROJECT_DIR)/MyGirl/Live2DSDK/lib/Debug-iphonesimulator",
+					"$(PROJECT_DIR)/MyGirl/Live2DSDK/lib/Release-iphoneos",
+					"$(PROJECT_DIR)/MyGirl/Live2DSDK/lib/Debug-iphoneos",
+				);
+				OTHER_LDFLAGS = "-lLive2D";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.com.fancy.ZiMu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		2C00888221A545E600F6166B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 64DK8BZY68;
+				ENABLE_BITCODE = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = L2D_TARGET_IPHONE;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/MyGirl/Live2DSDK/include";
+				INFOPLIST_FILE = MyGirl/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/Live2DSDK/lib/$(CONFIGURATION)-$(PLATFORM_NAME)",
+					"$(PROJECT_DIR)/MyGirl/Live2DSDK/lib/Release-iphonesimulator",
+					"$(PROJECT_DIR)/MyGirl/Live2DSDK/lib/Debug-iphonesimulator",
+					"$(PROJECT_DIR)/MyGirl/Live2DSDK/lib/Release-iphoneos",
+					"$(PROJECT_DIR)/MyGirl/Live2DSDK/lib/Debug-iphoneos",
+				);
+				OTHER_LDFLAGS = "-lLive2D";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.com.fancy.ZiMu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2C00886521A545E300F6166B /* Build configuration list for PBXProject "MyGirl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C00887E21A545E600F6166B /* Debug */,
+				2C00887F21A545E600F6166B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C00888021A545E600F6166B /* Build configuration list for PBXNativeTarget "MyGirl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C00888121A545E600F6166B /* Debug */,
+				2C00888221A545E600F6166B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2C00886221A545E300F6166B /* Project object */;
+}
